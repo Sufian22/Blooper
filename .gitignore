@@ -199,4 +199,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Ignore Spring files.
+/spring/*.pid
+
 # End of https://www.gitignore.io/api/windows,intellij,rubymine,ruby,rails
