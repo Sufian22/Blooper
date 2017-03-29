@@ -7,9 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(name: "Example user",
-            email: "valid@email.com",
-            password: "foobar",
-            password_confirmation: "foobar")
+            email: "admin@admin.com",
+            password: "1234567",
+            password_confirmation: "1234567",
+            admin: true)
 
 99.times do |x|
   name = Faker::Name.name
