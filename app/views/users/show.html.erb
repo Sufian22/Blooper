@@ -7,20 +7,19 @@
         <%= @user.name %>
       </h1>
     </section>
+    <p>
+      <strong>Email:</strong>
+      <%= @user.email %>
+    </p>
   </aside>
+
+  <div class="col-md-8">
+    <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%= will_paginate @microposts %>
+    <% end %>
+  </div>
 </div>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Microposts:</strong>
-  <% @microposts.each do |micro| %>
-      <tr>
-        <td><strong>Id:</strong> <%= micro.id %> </td>
-        <td><strong>Content:</strong> <%= micro.content %> </td>
-      </tr>
-  <% end %>
-</p>
