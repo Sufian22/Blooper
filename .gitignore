@@ -7,6 +7,9 @@
 # User-specific stuff:
 .idea/**/tasks.xml
 
+# Ignore uploaded test images.
+/public/uploads
+
 # Sensitive or high-churn files:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
